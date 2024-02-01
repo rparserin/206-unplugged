@@ -452,7 +452,49 @@ textarea {
   
   /*Desktop styles here*/
   @media only screen and (min-width: 1200px) {
-    
+    .content-wrapper {
+      max-width: 960px;
+    }
+
+    header {
+      padding: 15px 0;
+    }
+
+    .hero-area h1 {
+      width: 70%;
+    }
+
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%; 
+    }
+
+    .features h2 {
+      width: 90%;
+    }
+
+    .features article {
+      flex-basis: 33%;
+    }
+
+    .reviews article div {
+      width: 43%;
+    }
+
+  /********** About Page **********/
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 90%;
+    }
+
+  /********** FAQ Page **********/ 
+    .faq h2 {
+      width: 100%;
+    }
   }
 
 /* ==========================================================================
