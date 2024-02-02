@@ -195,29 +195,39 @@ textarea {
     text-align: center;
     background-color: #202322;
   }
-
+  
+  footer p {
+    margin: 0;
+  }
+  
   footer .content-wrapper {
     width: 55%;
   }
-
+  
   footer .contact {
     margin-bottom: 50px;
   }
-
+  
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
   }
-
-  footer .social p {
+  
+  footer .social-icons p {
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
   }
-
-  footer p {
-    margin: 0;
+  
+  footer .social-icons p i {
+    font-size: 1.3125em;
   }
 
   footer .copyright {
