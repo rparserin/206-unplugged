@@ -162,11 +162,6 @@ textarea {
     margin: 0;
   }
 
-  .header-logo {
-    width: 50px;
-    height: 50px;
-  }
-
   header figure {
     width: 60%;
   }
@@ -498,11 +493,7 @@ textarea {
 
     header .content-wrapper {
       width: 100%;
-      justify-content: space-between;
-    }
-
-    header a {
-      
+      justify-content: center;
     }
 
     header nav {
@@ -555,8 +546,8 @@ textarea {
       justify-content: space-between;
     }
 
-    .reviews article div {
-      width: 49%;
+    .reviews-info {
+      margin-left: 25px;
     }
 
     footer .content-wrapper {
@@ -596,6 +587,10 @@ textarea {
 
     .mission-content p {
       width: 45%;
+    }
+
+    .map figure {
+      padding-bottom: 45.5%;
     }
 
     .contact-section .content-wrapper h2 {
@@ -638,6 +633,7 @@ textarea {
   @media only screen and (min-width: 1200px) {
     .content-wrapper {
       max-width: 960px;
+      margin: 100px 0;
     }
 
     h2 {
@@ -656,6 +652,14 @@ textarea {
 
     header {
       padding: 15px 0;
+    }
+
+    header nav ul {
+      justify-content: space-evenly;
+    }
+
+    header .content-wrapper {
+      justify-content: space-between;
     }
 
     .hero-area h1 {
@@ -684,15 +688,15 @@ textarea {
       flex-basis: 33%;
     }
 
-    .reviews article div {
-      width: 43%;
-    }
-
     footer h4 {
       font-size: 1.875em;
     }
 
   /********** About Page **********/
+    .map figure {
+      padding-bottom: 37.5%;
+    }
+
     .mission h2,
     .contact-section .content-wrapper h2 {
         width: 90%;
