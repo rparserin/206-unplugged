@@ -92,6 +92,7 @@ textarea {
   }
   
   body {
+    color: #e2e3ed;
     font-family: 'Open Sans',sans-serif;
     font-size: 1em;
   }
@@ -110,17 +111,20 @@ textarea {
   a {
     color: #e2e3ed;
     text-decoration: none;
+    text-transform: uppercase;
   }
 
   h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 500;
   }
 
   h3, 
   h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: 500;
   }
 
   p {
@@ -145,6 +149,7 @@ textarea {
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    background-color: #202322;
   }
 
   header .content-wrapper {
@@ -157,11 +162,14 @@ textarea {
   
   header .header-divider {
     width: 100%;
-    height: 1px;
+    height: 3px;
     margin: 10px 0 20px;
+    background: #3a3a3a;
   }
   header nav {
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
   }
 
   header nav ul {
@@ -170,16 +178,20 @@ textarea {
     width: 100%;
   }
 
+  header nav ul li {
+    font-size: 1.125em;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #202322;
   }
 
   footer .content-wrapper {
     width: 55%;
-    margin: 50px 0;
   }
 
   footer .contact {
@@ -213,9 +225,46 @@ textarea {
     justify-content: center;
   }
 
+  .hero-area h1 {
+    font-size: 2.25em;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
   aside {
     display: flex;
     justify-content: center;
+    background-color: #527158;
+  }
+
+  aside .form {
+    margin-top: 30px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+    border-radius: 5px;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
   }
 
   .features {
@@ -246,25 +295,30 @@ textarea {
   .reviews {
     display: flex; 
     justify-content: center;
+    background-color: #2a423a;
   }
 
   .reviews h2 {
-
+    margin-bottom: 40px;
+    line-height: 1;
   }
 
   .reviews h3 {
     width: 55%;
+    margin: 20px 0;
   }
 
    /********** About Page - Main Styles **********/
   .mission {
     display: flex;
     justify-content: center;
+    background-color: #527158;
   }
 
   .contact-section {
     display: flex;
     justify-content: center;
+    background-color: #2a423a;
   }
 
   .contact-content p {
@@ -275,21 +329,28 @@ textarea {
   .faq {
     display: flex;
     justify-content: center;
+    background-color: #527158;
   }
 
   .faq .content-wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
     flex-flow: row wrap;
     margin: 50px 0 0 0;
   }
 
   .faq h2 {
     margin-bottom: 40px;
+    line-height: 1;
   }
 
   .faq-content {
     margin-bottom: 50px;
+  }
+
+  .faq-content h4 {
+    line-height: 1.333;
   }
 
 /* ==========================================================================
@@ -387,6 +448,16 @@ textarea {
       margin: 100px 0;
     }
 
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+
     header {
       padding: 33px 0;
     }
@@ -455,6 +526,15 @@ textarea {
       margin: 0;
     }
 
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+
+    footer p {
+      line-height: 1.285;
+    }
+
     footer .copyright {
       width: 100%;
     }
@@ -482,6 +562,10 @@ textarea {
       align-items: flex-start;
     }
 
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
+
     /********** FAQ Page **********/
     .faq .content-wrapper {
       justify-content: space-between;
@@ -495,6 +579,12 @@ textarea {
       width: 100%;
     }
 
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
+
   }
   
   /*Desktop styles here*/
@@ -503,12 +593,27 @@ textarea {
       max-width: 960px;
     }
 
+    h2 {
+      font-size: 2.25em;
+    }
+  
+    h3,
+    h4 {
+      font-size: 1.875em;
+    }
+  
+    p {
+      font-size: 1.125em;
+      line-height: 1.333;
+    }
+
     header {
       padding: 15px 0;
     }
 
     .hero-area h1 {
       width: 70%;
+      font-size: 3.75em;
     }
 
     aside .content-wrapper {
@@ -518,6 +623,10 @@ textarea {
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
       width: 30%; 
+    }
+
+    .form-description p {
+      font-size: 1.125em;
     }
 
     .features h2 {
@@ -532,16 +641,31 @@ textarea {
       width: 43%;
     }
 
+    footer h4 {
+      font-size: 1.875em;
+    }
+
   /********** About Page **********/
     .mission h2,
     .contact-section .content-wrapper h2 {
         width: 90%;
+        font-size: 3em;
     }
+
+    .contact-content h4 {
+      font-size: 1.875em;
+    } 
 
   /********** FAQ Page **********/ 
     .faq h2 {
       width: 100%;
     }
+
+    .faq h4,
+    .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
   }
 
 /* ==========================================================================
